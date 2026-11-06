@@ -38,7 +38,7 @@ C>
 !     moves a file on disk
 !
 #if defined(__INTEL_COMPILER)
-      use ifport, only: rename
+!      use ifport, only: rename !! prool: fast dirty hack for gfortran 13.3.0 / Ubuntu 24.04.5
 #endif
 !
       implicit none
